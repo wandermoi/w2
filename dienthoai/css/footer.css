@@ -1,0 +1,15 @@
+.page-footer {
+    padding: 1px 5px;
+    margin: 19px 0px;
+}
+
+.so {
+    display: inline-block;
+    padding: 8px 15px 8px 15px;
+    margin-top: 5px;
+    margin-left: 5px;
+    text-decoration: none;
+    color: #005C5B;
+    background-color: #FFC745;
+    border: 1px solid rgb(227, 227, 227);
+}
