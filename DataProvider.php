@@ -27,23 +27,23 @@ function query($sql)
 }
 
 $trangthaiDH = array(
-	"chuagiao" => "chưa giao",
-	"danggiao" => "đang giao",
-	"bihuy" => "bị hủy",
-	"danhan" => "đã nhận",
-	"ht" => "hoàn thành",
-	"khongnhan" => "không nhận"
+	"chuagiao" => "Chưa giao",
+	"danggiao" => "Đang giao",
+	"bihuy" => "Bị hủy",
+	"danhan" => "Đã nhận",
+	"ht" => "Hoàn thành",
+	"khongnhan" => "Không nhận"
 );
 $trangthaithanhtoan = array(
-	"chuathanhtoan" => "chưa thanh toán",
-	"hoanthanh" => "thanh toán rồi"
+	"chuathanhtoan" => "Chưa thanh toán",
+	"hoanthanh" => "Thanh toán rồi"
 );
-$PhuongthucnhahangArray = array("1" => "nhận tại của hàng", "2" => "giao tận nhà");
+$PhuongthucnhahangArray = array("1" => "Nhận tại của hàng", "2" => "Giao tận nhà");
 $quyenArray = array(
-	"master" => "master",
-	"qlnv" => "quản lý nhân viên",
-	"nvdd" => "nhân viên duyệt đơn",
-	"customer" => "khách hàng",
-	"nvqlkho" => "nhân viên quản lý kho"
+	"master" => "Master",
+	"qlnv" => "Quản lý nhân viên",
+	"nvdd" => "Nhân viên duyệt đơn",
+	"customer" => "Khách hàng",
+	"nvqlkho" => "Nhân viên quản lý kho"
 );
 
