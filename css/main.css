@@ -1,0 +1,143 @@
+.sp {
+    width: 240px;
+    margin: 15px;
+    float: left;
+    transition: 0.2s;
+    padding: 2px 2px;
+    box-shadow: 1px 1px 5px gray;
+    -webkit-border-radius: 6px;
+}
+
+.sp:hover {
+    background-color: #ffdd99;
+    box-shadow: 1px 1px 5px gray;
+}
+
+.sp img {
+    transition: all ease 300ms;
+}
+
+.hinh-sp {
+    height: 230px;
+    width: 210px;
+    position: relative;
+    margin: 0 auto;
+}
+
+.hinh {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    top: 20px;
+    height: 210px;
+    width: 210px;
+    /*transition: 0.3s;*/
+}
+
+.box:hover .hinh {
+    position: absolute;
+    /*top: 5px;*/
+    text-decoration: none;
+}
+
+.sp a:hover {
+    text-decoration: none;
+}
+
+.tensp {
+    text-align: left;
+    margin: 0;
+    padding: 5px 0 0 10px;
+    font-size: 17px;
+    color: gray;
+}
+
+.dongia {
+    margin: 0;
+    padding: 0px 0 0 10px;
+    font-size: 15px;
+    font-weight: bold;
+    color: grey;
+}
+
+.hidden {
+    display: none;
+}
+
+
+/*nút thêm*/
+
+.them {
+    font-size: 12px;
+    padding: 5px 5px 8px 8px;
+    color: rgba(126, 126, 126, 1.00);
+    border: 1px solid rgb(59, 59, 59, 0.5);
+    border-radius: 5px;
+    margin-right: 5px;
+    background: white;
+    float: right;
+    cursor: pointer;
+}
+
+.them :hover {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.them:active {
+    background-color: #ffdd99;
+    outline: none;
+}
+
+.main_margin_top {
+    margin: 30px 0px 0px 0px;
+}
+
+.h-min {
+    min-height: 400px;
+}
+
+.w {
+    width: 75%;
+}
+
+@media only screen and (max-width:1100px) {
+    .w {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width:1365px) {
+    .sp {
+        margin: 25px;
+        width: 240px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .sp {
+        width: 50%;
+        margin: 0px;
+        float: left;
+        box-shadow: 1px 1px 5px gray;
+        transition: 0.2s;
+    }
+}
+
+.hover_btn:hover {
+    background-color: red;
+}
+
+.hover_btn:hover {
+    background-color: rgb(236, 124, 124);
+}
+
+.text-decoration-none {
+    text-decoration: none !important;  
+    
+}
+.text-decoration-none:hover{
+    background-color: red !important;
+    color: white;
+}

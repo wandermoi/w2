@@ -1,0 +1,19 @@
+#col-12 {
+    margin: 0 auto;
+}
+
+.so-trang:hover {
+    background: rgb(231, 231, 231);
+    color: black;
+    transition: 0.3s;
+}
+
+.so-trang {
+    display: inline-block;
+    padding: 8px 15px 8px 15px;
+    margin-top: 5px;
+    margin-left: 5px;
+    text-decoration: none;
+    color: black;
+    border: 1px solid rgb(227, 227, 227);
+}

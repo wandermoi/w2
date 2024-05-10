@@ -1,0 +1,31 @@
+.center {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+.round {
+    border-radius: 14px;
+}
+
+.stick {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 99;
+}
+
+.header-nav {
+    background-color: #ffffb3;
+    font-weight: bold;
+}
+
+.header-nav-link {
+    padding: 10px 0px;
+    margin: 0px 7px;
+}
+
+.header-nav-link:hover {
+    text-decoration: none;
+    background: rgb(42, 214, 42);
+}

@@ -1,0 +1,55 @@
+@charset "utf-8";
+.border1 {
+    margin: auto;
+    width: 40%;
+    border: #000000 solid 2px;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+.border3 span {
+    font-size: 25px;
+}
+
+.border3 p {
+    margin-left: 120px;
+    width: 300px;
+    padding: 0px;
+    border: 0;
+    border-bottom: 1px solid #435160;
+    outline: none;
+    color: black;
+    font-size: 20px;
+    text-align: center;
+}
+
+.border3 form {
+    margin: auto;
+    width: 65%;
+}
+
+.border3 h3 {
+    text-align: center;
+    font-size: 20px;
+}
+
+.border3 h2 {
+    text-align: center;
+    font-size: 20px;
+}
+
+.border3 h1 {
+    text-align: center;
+    font-weight: bold;
+    margin-left: 0px;
+    font-size: 50px;
+    margin-top: 0px;
+    border-bottom: 10px solid #000000;
+}
+
+.shadow-cell {
+    --tw-shadow: 0 1px 2px 0 rgb(60 64 67 / 10%), 0 2px 6px 2px rgb(60 64 67 / 15%);
+    ;
+    --tw-shadow-colored: 0 1px 2px 0 var(--tw-shadow-color), 0 2px 6px 2px var(--tw-shadow-color);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}

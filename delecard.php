@@ -1,0 +1,10 @@
+<?php
+    session_start();
+        $id=$_GET["id"];
+        unset($_SESSION["card"][$id]);
+        if(isset($_GET['delete']))
+        {
+            unset($_SESSION["card"]);
+        }
+        header("location:giohang.php")
+?>
