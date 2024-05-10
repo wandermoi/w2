@@ -76,7 +76,7 @@
                         <td> 
                           <form action="giohang.php" method="post">
                               <input type="hidden"  name="MaSP" value="' . $key . '">
-                              <input class="btn btn-primary" onsubmit="check()" type="submit" value="xóa">
+                              <input class="btn btn-primary" onsubmit="check()" type="submit" value="Xóa">
                           </form>
                         </td>
                       </tr>';
@@ -90,7 +90,7 @@
         if (!$isEmty) {
           echo '
         <div class="d-flex align-items-center">
-          <select name="thanhtoan" title="phương thức nhận hàng" class="form-select p-2 mx-2 w-25 float-left" aria-label="Default select example">
+          <select name="thanhtoan" title="Phương thức nhận hàng" class="form-select p-2 mx-2 w-25 float-left" aria-label="Default select example">
             <option selected value="1">Tại của hàng</option>
             <option value="2">Giao tận nhà</option>
           </select>
@@ -126,7 +126,7 @@
     var giohang = new FormData(document.getElementById('giohang'))
     var ktSDT = /[0-9]{10}$/;
     if (!ktSDT.test(giohang.get("SDT"))) {
-      alert("sai số điện thoại")
+      alert("Sai số điện thoại")
       return false;
     }
   }
