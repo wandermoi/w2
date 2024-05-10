@@ -100,14 +100,14 @@ include_once("./DataProvider.php");
 
 				$gia = query($sql)[0]['max'];
 				?>
-				<label id="htg">giá sản phẩm: <?php echo number_format($gia) ?></label>
+				<label id="htg">Giá sản phẩm: <?php echo number_format($gia) ?></label>
 				<div class="position-relative" style="width: 300px;">
 
 					<input type="range" style="top: 0;left: 0;" value="<?php echo $gia ?>" max="<?php echo $res; ?>" name="gia" onchange="rh(this)" class="form-control-range position-absolute" id="formControlRange">
 				</div>
 
 			</div>
-			<input type="button" class="btn form-select m-2 btn-primary" onclick="phantrangAjax('<?php echo $tl ?>',1)" value="lọc sản phẩm">
+			<input type="button" class="btn form-select m-2 btn-primary" onclick="phantrangAjax('<?php echo $tl ?>',1)" value="Lọc sản phẩm">
 		</div>
 	<?php } ?>
 
