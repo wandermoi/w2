@@ -23,12 +23,11 @@ session_start(); ?>
 					<thead class="thead-dark">
 						<tr>
 							<th class="text-center" onclick="ffff()" scope="col">STT</th>
-							<th class="text-center" scope="col">ảnh sản phẩm</th>
+							<th class="text-center" scope="col">Ảnh sản phẩm</th>
 							<th class="text-center" scope="col">Tên sản phẩm</th>
 							<th class="text-center" scope="col">Đơn giá</th>
 							<th class="text-center" scope="col">Số lượng</th>
-							<th class="text-center" scope="col">Thành tiền
-							</th>
+							<th class="text-center" scope="col">Thành tiền</th>
 						</tr>
 					</thead>
 					<tbody>
@@ -97,19 +96,19 @@ session_start(); ?>
 					switch ($trangthai) {
 						case 'chuagiao':
 							echo '
-								<button class="btn-primary" onclick=\'active_inactive_user("bihuy", "' . $MaDH . '")\'>hủy hàng</button>
-								<button class="btn-primary" onclick=\'active_inactive_user("danggiao", "' . $MaDH . '")\'>đang giao</button>';
+								<button class="btn-primary" onclick=\'active_inactive_user("bihuy", "' . $MaDH . '")\'>Hủy hàng</button>
+								<button class="btn-primary" onclick=\'active_inactive_user("danggiao", "' . $MaDH . '")\'>Đang giao</button>';
 							break;
 						case 'danggiao':
-							echo '<button class="btn-primary" onclick=\'active_inactive_user("bihuy", "' . $MaDH . '")\'>hủy hàng</button>';
-							echo '<button class="btn-primary" onclick=\'active_inactive_user("danhan", "' . $MaDH . '")\'>đã nhận</button>';
+							echo '<button class="btn-primary" onclick=\'active_inactive_user("bihuy", "' . $MaDH . '")\'>Hủy hàng</button>';
+							echo '<button class="btn-primary" onclick=\'active_inactive_user("danhan", "' . $MaDH . '")\'>Đã nhận</button>';
 							break;
 						case 'danhan':
-							echo '<button class="btn-primary" onclick=\'active_inactive_user("ht", "' . $MaDH . '")\'>hoàn thành</button>';
-							echo '<button class="btn-primary" onclick=\'active_inactive_user("danggiao", "' . $MaDH . '")\'>chưa nhận</button>';
+							echo '<button class="btn-primary" onclick=\'active_inactive_user("ht", "' . $MaDH . '")\'>Hoàn thành</button>';
+							echo '<button class="btn-primary" onclick=\'active_inactive_user("danggiao", "' . $MaDH . '")\'>Chưa nhận</button>';
 							break;
 						case 'khongnhan':
-							echo '<button class="btn-primary" onclick=\'active_inactive_user("bihuy", "' . $MaDH . '")\'>hủy hàng</button>';
+							echo '<button class="btn-primary" onclick=\'active_inactive_user("bihuy", "' . $MaDH . '")\'>Hủy hàng</button>';
 							break;
 					}
 					?>
