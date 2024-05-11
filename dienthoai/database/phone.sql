@@ -227,11 +227,11 @@ CREATE TABLE `loaisp` (
 --
 
 INSERT INTO `loaisp` (`MaLoaiSP`, `TenLoaiSP`) VALUES
-('ip', 'iphone'),
-('op', 'oppo'),
-('pk', 'phụ kiện'),
-('so', 'sony'),
-('ss', 'samsung');
+('ip', 'Iphone'),
+('op', 'Oppo'),
+('pk', 'Phụ kiện'),
+('so', 'Sony'),
+('ss', 'Samsung');
 
 --
 -- Bẫy `loaisp`
