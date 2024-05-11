@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Máy chủ: 127.0.0.1
--- Thời gian đã tạo: Th10 29, 2023 lúc 03:46 AM
+-- Thời gian đã tạo: Th3 2, 2024 lúc 03:46 AM
 -- Phiên bản máy phục vụ: 10.4.22-MariaDB
 -- Phiên bản PHP: 7.3.33
 
@@ -87,12 +87,12 @@ CREATE TABLE `donhang` (
 --
 
 INSERT INTO `donhang` (`MaDonHang`, `MaHoaDon`, `TenKhachHang`, `SDTNguoiNhan`, `DiaChiGiaoHang`, `TenNguoiGiaoHang`, `TinhTrangDonHang`, `ngayhoanthanh`, `trangthaithanhtoan`) VALUES
-(48, 'HD1', 'quanghuy', '0343337777', 'HCM', 'master', 'danggiao', '2023-10-24', 'chuathanhtoan'),
-(49, 'HD2', 'quanghuy', '0343337777', 'HCM', '', 'chuagiao', '2023-11-02', 'chuathanhtoan'),
-(50, 'HD3', 'quanghuy', '0343337777', 'HCM', '', 'chuagiao', '2023-11-03', 'chuathanhtoan'),
-(51, 'HD4', 'quanghuy', '0343337777', 'HCM', '', 'chuagiao', '2023-11-06', 'chuathanhtoan'),
-(53, 'HD5', 'quanghuy', '0343337777', 'HCM', '', 'chuagiao', '2023-11-06', 'chuathanhtoan'),
-(54, 'HD6', 'quanghuy', '0343337777', 'HCM', '', 'chuagiao', '2023-11-14', 'dathanhtoan');
+(48, 'HD1', 'nghngh', '0343337777', 'HCM', 'master', 'danggiao', '2023-10-24', 'chuathanhtoan'),
+(49, 'HD2', 'nghngh', '0343337777', 'HCM', '', 'chuagiao', '2024-03-02', 'chuathanhtoan'),
+(50, 'HD3', 'nghngh', '0343337777', 'HCM', '', 'chuagiao', '2024-03-03', 'chuathanhtoan'),
+(51, 'HD4', 'nghngh', '0343337777', 'HCM', '', 'chuagiao', '2024-03-06', 'chuathanhtoan'),
+(53, 'HD5', 'nghngh', '0343337777', 'HCM', '', 'chuagiao', '2024-03-06', 'chuathanhtoan'),
+(54, 'HD6', 'nghngh', '0343337777', 'HCM', '', 'chuagiao', '2024-03-14', 'dathanhtoan');
 
 -- --------------------------------------------------------
 
@@ -136,12 +136,12 @@ CREATE TABLE `hoadon` (
 --
 
 INSERT INTO `hoadon` (`MaHoaDon`, `NgayDatHang`, `Phuongthucnhahang`, `UserName`, `TongTien`, `PhiVanChuyen`) VALUES
-('HD1', '2023-10-24', '1', 'quanghuy', '27000000', '0'),
-('HD2', '2023-11-02', '1', 'quanghuy', '11000000', '0'),
-('HD3', '2023-11-03', '1', 'quanghuy', '13900000', '0'),
-('HD4', '2023-11-06', '1', 'quanghuy', '70400000', '0'),
-('HD5', '2023-11-06', '1', 'quanghuy', '29450000', '0'),
-('HD6', '2023-11-14', '1', 'quanghuy', '13000000', '0');
+('HD1', '2024-03-24', '1', 'nghngh', '27000000', '0'),
+('HD2', '2024-03-02', '1', 'nghngh', '11000000', '0'),
+('HD3', '2024-03-03', '1', 'nghngh', '13900000', '0'),
+('HD4', '2024-03-06', '1', 'nghngh', '70400000', '0'),
+('HD5', '2024-03-06', '1', 'nghngh', '29450000', '0'),
+('HD6', '2024-03-14', '1', 'nghngh', '13000000', '0');
 
 --
 -- Bẫy `hoadon`
@@ -227,11 +227,11 @@ CREATE TABLE `loaisp` (
 --
 
 INSERT INTO `loaisp` (`MaLoaiSP`, `TenLoaiSP`) VALUES
-('ip', 'iphone'),
-('op', 'oppo'),
-('pk', 'phụ kiện'),
-('so', 'sony'),
-('ss', 'samsung');
+('ip', 'Iphone'),
+('op', 'Oppo'),
+('pk', 'Phụ kiện'),
+('so', 'Sony'),
+('ss', 'Samsung');
 
 --
 -- Bẫy `loaisp`
@@ -386,7 +386,7 @@ INSERT INTO `sanpham` (`MaLoaiSP`, `TenSP`, `SLTon`, `DonGia`, `Image`, `MaSP`, 
 DELIMITER $$
 CREATE TRIGGER `sl_khong_nho_hon_0` BEFORE UPDATE ON `sanpham` FOR EACH ROW if new.SLTon < 0 THEN
 	SIGNAL SQLSTATE '45000'
-    SET MESSAGE_TEXT = 'so luong khong nho hon 0';
+    SET MESSAGE_TEXT = 'Số lượng không nhỏ hơn 0';
 END IF
 $$
 DELIMITER ;
@@ -427,18 +427,8 @@ CREATE TABLE `user` (
 INSERT INTO `user` (`MaKhachHang`, `UserName`, `Password`, `DiaChi`, `Email`, `SDT`, `Quyen`, `TrangThai`, `tenKH`) VALUES
 (1, 'master', '123456789', 'HCMl', 'master@master.com', '0987654321', 'master', '1', 'khachhang'),
 (2, 'admin', '123456789', 'HN', 'admin@admin', '', 'customer', '1', 'khachhang'),
-(3, 'huy', '123456789', 'Hà Nội ', 'huy91027@gmail.com', '0341234456', 'customer', '0', 'khachhang'),
-(4, 'tien', '123456789', 'HN', 'huy91027@gmail.com', '', 'customer', '1', 'khachhang'),
-(5, 'master1', '123456789', 'HCMi', 'huy91027@gmail.com', '0987654321', 'nvdd', '1', 'khachhang'),
-(6, 'master2', '123456789', 'HCMi', 'huy91027@gmail.com', '0987654321', 'nvqlkho', '1', 'khachhang'),
-(7, 'hai', '123456789', 'HCM', 'hai@gmail.com', '0987654321', 'customer', '1', 'haihung'),
-(8, 'hoang', '1234567', 'DDoong nai', 'hoang312312@gmail.com', '0987654321', 'customer', '1', 'hoàng '),
-(9, 'master3', '123456789', 'HN', 'huy91027@gmail.com', '0987654321', 'qlnv', '1', 'khachhang'),
-(10, 'quanghuy', '123456789', 'HCM', 'huy91027@gmail.com', '0343337777', 'customer', '1', 'nguyễn huy'),
-(11, 'taikhoanmoi', '123456789', 'HCM', 'huy91027@gmail.com', '0987654321', 'customer', '0', 'Tài khoản mới'),
-(12, 'master123', '123456789', 'HCMi', 'huy91027@gmail.com', '0987654321', 'qlnv', '1', 'khachhang'),
-(14, 'master5555', '123456789', 'HN', 'huy91027@gmail.com', '0987654321', 'master', '0', 'khachhang'),
-(15, 'gio', '123456789', 'HN', 'goi123@gmail.com', '0987654321', 'nvdd', '1', 'khachhang');
+(3, 'nghngh', '123456789', 'HCMi', 'nghngh@gmail.com', '0987654321', 'nvdd', '1', 'khachhang'),
+(4, 'ngng', '123456789', 'HCMi', 'ngng@gmail.com', '0987654321', 'nvqlkho', '1', 'khachhang'),
 
 -- --------------------------------------------------------
 
