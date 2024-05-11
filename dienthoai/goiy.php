@@ -15,7 +15,7 @@ WHERE sanphamphu=sanpham.MaSP AND goiy.sanphamchinh =$ma AND SLTon >0  ";
 
 ?>
     <div class="container p-0">
-        <div><strong>phụ kiện đi kèm</strong></div>
+        <div><strong>Phụ kiện đi kèm</strong></div>
         <div class="row">
             <?php for ($i = 0; $i < count($rew); $i++) {
                 $re = $rew[$i]; ?>
@@ -27,7 +27,7 @@ WHERE sanphamphu=sanpham.MaSP AND goiy.sanphamchinh =$ma AND SLTon >0  ";
                         <p class="tensp"><?php echo $re['TenSP'] ?></p>
                         <p class="dongia"><?php echo number_format($re['DonGia']) ?></p>
                     </a>
-                    <p class="dongia"> số lượng còn: <?php echo $re['SLTon'] ?> </p>
+                    <p class="dongia"> Số lượng còn: <?php echo $re['SLTon'] ?> </p>
                     <div class="them-vao-gio-hang">
                         <button class="them" onclick=addcard(<?php echo $re['SLTon'] ?>)> Thêm <i class="fa fa-cart-plus"></i>
                         </button>
