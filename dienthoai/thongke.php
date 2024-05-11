@@ -140,7 +140,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
                         <input class="form-control" type="number" name="sl" placeholder="Số cột hiển thị" value="10">
                     </div>
 
-                    <input class="btn btn-primary mx-2" type="submit" value="lọc">
+                    <input class="btn btn-primary mx-2" type="submit" value="Lọc">
                 </form>
             </div>
             <?php
