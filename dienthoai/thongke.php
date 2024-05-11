@@ -4,7 +4,7 @@
 <?php
 
 $kieuthongkeArray = array("tang" => "Sắp sếp tăng", "giam" => "Sắp sếp giảm");
-$loaithongkeAray = array("ds" => "Số lượng bán", "tien" => "Tiền bán", "slton" => "Số lượng tồn kho");
+$loaithongkeAray = array("ds" => "Số lượng bán", "tien" => "Tiền bán ", "slton" => "Số lượng tồn kho");
 $sql = '';
 
 $sqltanggiam = array("tang" => "ASC", "giam" => "DESC");
@@ -108,7 +108,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
                         </select>
                     </div>
                     <div class="col-3 form-group">
-                        <label for="kieuthongke">Kiểu thông kê</label>
+                        <label for="kieuthongke">Kiểu thống kê</label>
                         <select name="kieuthongke" id="kieuthongke" class="form-control">
                             <?php
                             foreach ($kieuthongkeArray as $key => $value) {
@@ -122,7 +122,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
                         </select>
                     </div>
                     <div class="col-3 form-group">
-                        <label for="loaithongke">Loại thông kê</label>
+                        <label for="loaithongke">Loại thống kê</label>
                         <select name="loaithongke" id="loaithongke" class="form-control">
                             <?php
                             foreach ($loaithongkeAray as $key => $value) {
