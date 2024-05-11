@@ -114,8 +114,8 @@ require_once('./DataProvider.php');
 		default:
 			echo '
 			<div class="center header-nav mb-3 ">
-				<a class="header-nav-link btn" href="index.php">trang chủ</a>
-				<a class="header-nav-link btn" onclick="phantrangAjax(\'\', 1)">tất cả sản phẩm</a>
+				<a class="header-nav-link btn" href="index.php">Trang chủ</a>
+				<a class="header-nav-link btn" onclick="phantrangAjax(\'\', 1)">Tất cả sản phẩm</a>
 			';
 			$sql = 'SELECT COUNT(*) as s, loaisp.MaLoaiSP as MaLoaiSP, loaisp.TenLoaiSP as TenLoaiSP
 					FROM loaisp, sanpham 
