@@ -101,7 +101,7 @@ $trangthaithanhtoanS = $row['trangthaithanhtoan'];
             </tr>
             <tr>
                 <td>
-                    <a href="body.php?action=danhsachhoadonmuahang" class="btn btn-primary"><i class="fa fa-angle-left"></i> danh sách hóa đơn</a>
+                    <a href="body.php?action=danhsachhoadonmuahang" class="btn btn-primary"><i class="fa fa-angle-left"></i>Danh sách hóa đơn</a>
                 </td>
                 <td colspan="2" class="hidden-xs"> </td>
                 <td class="text-center">
