@@ -42,11 +42,11 @@
 			<div class="dropdown mr-4 center" style="float:right;">
 				<button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 					<?php if ($quyen == "") {
-						echo "tất cả tài khoản";
+						echo "Tất cả tài khoản";
 					} else echo $quyenArray[$quyen]; ?>
 				</button>
 				<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-					<a class="dropdown-item" href="quanlyaccount.php">tất cả tài khoản</a>
+					<a class="dropdown-item" href="quanlyaccount.php">Tất cả tài khoản</a>
 					<?php
 					foreach ($quyenArray as $key => $value) {
 						echo '<a class="dropdown-item" href="quanlyaccount.php?quyen=' . $key . '">' . $value . '</a>';
