@@ -24,7 +24,7 @@ include("css.php") ?>
           <tr class="text-center">
             <th scope="col">Mã loại </th>
             <th scope="col">Tên loại</th>
-            <th scope="col">số lượng sản phẩm</th>
+            <th scope="col">Số lượng sản phẩm</th>
             <th scope="col">Handle</th>
           </tr>
         </thead>
@@ -51,12 +51,12 @@ include("css.php") ?>
                      </td>
                      <td>
                        <a href="xlLoaiSP.php?id=' . $MaLoaiSP . '">
-                         <div class="btn btn-primary">Cập nhât</div>
+                         <div class="btn btn-primary">Cập nhật</div>
                        </a>
                        <form class="btn" action="xlLoaiSP.php" method="post">
-                          <input type="hidden" name="loai" value="xoa">
+                          <input type="hidden" name="loai" value="Xoá">
                           <input type="hidden" name="MaLoaiSP" value="' . $MaLoaiSP . '">
-                          <input class="btn btn-primary" type="submit" value="xóa">
+                          <input class="btn btn-primary" type="submit" value="Xóa">
                         </form>
                      </td>
                    </tr>';
