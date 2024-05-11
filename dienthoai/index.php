@@ -61,7 +61,7 @@ if (isset($_SESSION['Quyen']) && $_SESSION['Quyen']!= 'customer' && $_SESSION['Q
                                         <p class="tensp"> ' . $TenSP . ' </p>
                                         <p class="dongia"> ' . number_format($DonGia) . ' Đ </p>
                                     </a>
-                                    <p class="dongia"> số lượng còn:' . $slton . '</p>
+                                    <p class="dongia"> Số lượng còn:' . $slton . '</p>
                                     <div>
                                         <button class="them" onclick=addcard("' . $MaSP . '")>
                                             Thêm
@@ -114,7 +114,7 @@ if (isset($_SESSION['Quyen']) && $_SESSION['Quyen']!= 'customer' && $_SESSION['Q
                     <h6 class="text-uppercase font-weight-bold">Liên hệ</h6>
                     <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
                     <p><i class="fa fa-home mr-3"></i>Địa chỉ: 99 An Dương Vương Phường 16 Quận 8 HCM</p>
-                    <p><i class="fa fa-envelope mr-3"></i>PTTKHDT@phone.com</p>
+                    <p><i class="fa fa-envelope mr-3"></i>web2@phone.com</p>
                     <p><i class="fa fa-phone mr-3"></i> + 01 234 567 88 </p>
                     <p><i class="fa fa-print mr-3"></i> + 01 234 567 89</p>
                 </div>
