@@ -34,11 +34,11 @@
         <table class="w-100">
           <thead>
             <tr>
-              <th>ảnh sản phẩm</th>
-              <th>tên sản phẩm</th>
-              <th>đơn giá</th>
-              <th>số lượng mua</th>
-              <th>tổng giá trị</th>
+              <th>Ảnh sản phẩm</th>
+              <th>Tên sản phẩm</th>
+              <th>Đơn giá</th>
+              <th>Số lượng mua</th>
+              <th>Tổng giá trị</th>
               <th>Xóa</th>
             </tr>
           </thead>
@@ -90,7 +90,7 @@
         if (!$isEmty) {
           echo '
         <div class="d-flex align-items-center">
-          <select name="thanhtoan" title="phương thức nhận hàng" class="form-select p-2 mx-2 w-25 float-left" aria-label="Default select example">
+          <select name="thanhtoan" title="Phương thức nhận hàng" class="form-select p-2 mx-2 w-25 float-left" aria-label="Default select example">
             <option selected value="1">Tại của hàng</option>
             <option value="2">Giao tận nhà</option>
           </select>
@@ -104,7 +104,7 @@
         </div>
           <div class=" my-3">
             <input type="hidden" name="loai" value="add">
-            <input type="submit" class="btn btn-primary" value="đặt hàng">
+            <input type="submit" class="btn btn-primary" value="Đặt hàng">
           </div>
           </div>
           <div class="float-right my-3">
@@ -126,7 +126,7 @@
     var giohang = new FormData(document.getElementById('giohang'))
     var ktSDT = /[0-9]{10}$/;
     if (!ktSDT.test(giohang.get("SDT"))) {
-      alert("sai số điện thoại")
+      alert("Sai số điện thoại")
       return false;
     }
   }
