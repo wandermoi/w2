@@ -80,7 +80,7 @@ if (isset($_POST['mua'])) {
 
             //thêm vào chi tiết hóa đơn
             $sql = 'INSERT INTO `chitiethoadon`( `MaHoaDon`, `MaSP`, `SoLuong`, `DonGia`, `DonViTinh`, `ThanhTien`) 
-            VALUES ("' . $MaHD . '","' . $MaSP . '","' . $SL . '","' . $DonGia . '","chiếc","' . ($DonGia * $SL) . '")';
+            VALUES ("' . $MaHD . '","' . $MaSP . '","' . $SL . '","' . $DonGia . '","Chiếc","' . ($DonGia * $SL) . '")';
             $result = mysqli_query($conn, $sql);
             if (!$result) {
                 echo $sql;
